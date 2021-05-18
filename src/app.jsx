@@ -3,6 +3,7 @@ import NavBar from './components/navBar';
 import './app.css';
 import VideoList from './components/videoList';
 import DetailVideo from './components/detailVideo';
+import SideBar from './components/sideBar';
 
 class App extends Component {
   state ={
@@ -88,6 +89,8 @@ class App extends Component {
                 status={this.state.detailViewOnOff}
                 />
             
+              <SideBar />
+
               <VideoList 
                 key={this.state.etag}
                 videoList={this.state.videoList}

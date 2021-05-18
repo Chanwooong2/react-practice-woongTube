@@ -16,7 +16,7 @@ class NavBar extends PureComponent {
                     <span className="navBar-logo-text">WoongTube</span>
                 </span>
                 <form className="navBar-form" action="" onSubmit={this.searchFunc}>
-                    <input className="navBar-input" ref={this.inputRef} type="text"/>
+                    <input className="navBar-input" ref={this.inputRef} type="text" placeholder="검색"/>
                     <button className="navBar-btn"><img src="/woongTube/images/search.png" alt="" className="navBar-btn-img"/></button>
                 </form>
             </nav>
