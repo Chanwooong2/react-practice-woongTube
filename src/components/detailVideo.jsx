@@ -16,7 +16,7 @@ class DetailVideo extends Component {
 			}else{
 				videoId = video.id.videoId;
 			}
-			let videoSrc = "http://www.youtube.com/embed/" + videoId + "?enablejsapi=1"
+			let videoSrc = "https://www.youtube.com/embed/" + videoId + "?enablejsapi=1"
 
 			return (
 				<div className="video-viewer">
