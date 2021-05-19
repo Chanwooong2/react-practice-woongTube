@@ -20,5 +20,5 @@
 2. 동영상 선택시 디테일 화면
 ![WoongTube](./public/images/capture/woongTube-detail.JPG)
 - - - 
-3. 화면 사이즈에 따라 반응형으로 변화
+3. 화면 사이즈에 따라 반응형으로 변화  
 ![WoongTube](./public/images/capture/woongTube-detail-responsive.JPG)
