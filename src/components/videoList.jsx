@@ -5,6 +5,11 @@ class VideoList extends PureComponent {
     goVideoDetail = (videoId) => {
         // 요놈 정보가지고 디테일 페이지 
         this.props.toggleFunc(videoId);
+
+        let videos = document.querySelectorAll(".video");
+        videos.forEach(item => item.style.display = "flex");
+        let targetVideo = document.getElementById(videoId);
+        targetVideo.style.display = "none";
     }
 
     render() {
@@ -24,6 +29,7 @@ class VideoList extends PureComponent {
                         }
                     }
                     return (
+
                     <Video 
                         key={id}
                         video={item}

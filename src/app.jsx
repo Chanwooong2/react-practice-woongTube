@@ -84,12 +84,14 @@ class App extends Component {
         />
         <section className="contents-section">
             {/* <section className="list-container"> */}
+              <SideBar 
+                goHome={this.getInitData}
+              />
+
               <DetailVideo
                 video={this.state.detailViewOnOff === true ? this.state.selectedVideo:null}
                 status={this.state.detailViewOnOff}
                 />
-            
-              <SideBar />
 
               <VideoList 
                 key={this.state.etag}

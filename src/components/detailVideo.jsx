@@ -25,9 +25,9 @@ class DetailVideo extends Component {
 							src={videoSrc} frameBorder="0" title="woongTubePlayer"></iframe>
 					</div>
 					<div className="video-description">
-						<div className="video-description-tag">{tags}</div>
+						<div className="video-description-tag" >{tags}</div>
 						<div className="video-description-title">{video.snippet.title}</div>
-						<pre>{video.snippet.description}</pre>
+						<div className="video-description-content">{video.snippet.description}</div>
 					</div>
 				</div>
 			);
