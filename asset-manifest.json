@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/woongTube/static/css/main.135698ef.chunk.css",
-    "main.js": "/woongTube/static/js/main.820e2e8c.chunk.js",
-    "main.js.map": "/woongTube/static/js/main.820e2e8c.chunk.js.map",
+    "main.css": "/woongTube/static/css/main.adf793bd.chunk.css",
+    "main.js": "/woongTube/static/js/main.61aaf323.chunk.js",
+    "main.js.map": "/woongTube/static/js/main.61aaf323.chunk.js.map",
     "runtime-main.js": "/woongTube/static/js/runtime-main.87f879ea.js",
     "runtime-main.js.map": "/woongTube/static/js/runtime-main.87f879ea.js.map",
     "static/js/2.0d064f9e.chunk.js": "/woongTube/static/js/2.0d064f9e.chunk.js",
     "static/js/2.0d064f9e.chunk.js.map": "/woongTube/static/js/2.0d064f9e.chunk.js.map",
     "index.html": "/woongTube/index.html",
-    "static/css/main.135698ef.chunk.css.map": "/woongTube/static/css/main.135698ef.chunk.css.map",
+    "static/css/main.adf793bd.chunk.css.map": "/woongTube/static/css/main.adf793bd.chunk.css.map",
     "static/js/2.0d064f9e.chunk.js.LICENSE.txt": "/woongTube/static/js/2.0d064f9e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.87f879ea.js",
     "static/js/2.0d064f9e.chunk.js",
-    "static/css/main.135698ef.chunk.css",
-    "static/js/main.820e2e8c.chunk.js"
+    "static/css/main.adf793bd.chunk.css",
+    "static/js/main.61aaf323.chunk.js"
   ]
 }
