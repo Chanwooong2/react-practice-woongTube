@@ -15,7 +15,7 @@
 ### [Detail view]
   
 1. 메인 화면 / 마우스 오버 시 상세 설명
-![WoongTube](./public/images/capture/woongTube-main-description.jpg)  
+![WoongTube](./public/images/capture/woongTube-main-description.JPG)  
 - - - 
 2. 동영상 선택시 디테일 화면
 ![WoongTube](./public/images/capture/woongTube-detail.JPG)
