@@ -22,15 +22,8 @@ class VideoList extends PureComponent {
                     var id = "";
                     if(typeof item.id !== "object"){
                         id = item.id;
-                        console.log(`check point 2`);
                     }else{
-                        // if(item.id.hasOwnProperty("chennelId")){
-                        //     id = item.id.chennelId;
-                        //     console.log(`check point 2-1`);
-                        // }else if(item.id.hasOwnProperty("videoId")){
-                            id = item.id.videoId;
-                            console.log(`check point 2-2`);
-                        // }
+                        id = item.id.videoId;
                     }
                     return (
 
@@ -42,7 +35,6 @@ class VideoList extends PureComponent {
                     );
                     } 
                 )}
-
 
             </div>
         );
