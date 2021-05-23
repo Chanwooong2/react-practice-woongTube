@@ -8,6 +8,7 @@ class SideBar extends PureComponent {
         videos.forEach(item => item.style.display = "flex");
 	}
 	render() {
+        console.log(`render sideBar~!`);
 		return (
 			<nav className="sideBar">
 				<div className="sideBar-sticky">

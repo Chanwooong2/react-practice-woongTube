@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './detailVideo.module.css'
 
 class DetailVideo extends Component {
 	render() {
@@ -19,15 +20,15 @@ class DetailVideo extends Component {
 			let videoSrc = "https://www.youtube.com/embed/" + videoId + "?enablejsapi=1"
 
 			return (
-				<div className="video-viewer">
-					<div className="video-view">
-						<iframe id="player" type="text/html" width="960" height="540"
+				<div className={styles.viewer}>
+					<div className={styles.view}>
+						<iframe id={styles.player} type="text/html" width="960" height="540"
 							src={videoSrc} frameBorder="0" title="woongTubePlayer"></iframe>
 					</div>
-					<div className="video-description">
-						<div className="video-description-tag" >{tags}</div>
-						<div className="video-description-title">{video.snippet.title}</div>
-						<div className="video-description-content">{video.snippet.description}</div>
+					<div className={styles.description}>
+						<div className={styles.tag}>{tags}</div>
+						<div className={styles.title}>{video.snippet.title}</div>
+						<div className={styles.content}>{video.snippet.description}</div>
 					</div>
 				</div>
 			);

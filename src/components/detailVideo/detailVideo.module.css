@@ -1,0 +1,78 @@
+.viewer{
+	width: 75%;
+	margin: 0px 10px 10px 10px;
+}
+.view{
+	flex: none;
+	position: sticky;
+	top: 56px;
+	width: 100%;
+	padding-bottom: 56.25%;
+	padding-top: 10px;
+	background: #181818;
+}
+#player{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.description{
+	color:#fff;
+	margin-top: 10px;
+	cursor: default;
+}
+
+.title{
+	font-size: 1.2em;
+	margin: 30px 0px;
+	font-weight: bold;
+}
+.content{
+	white-space: pre-wrap;
+}
+.tag{
+	color: #3ea6ff;
+	font-size: 0.7em;
+	display: flex;
+	flex-wrap: wrap;
+}
+.tag > span{
+	margin: 5px;
+	/* cursor: pointer; */
+}
+/* .tag > span:hover{
+	opacity: 0.8;
+} */
+
+
+
+@media screen and (max-width: 676px) {
+	/* .video {
+	  width:100%;
+	  height:auto;
+	} */
+	/* .video-detail {
+	  width:100%;
+	  height:100%;
+	}
+	.video-img {
+	  width:100%;
+	}
+	.sideBar {
+	  display:none;
+	} */
+  }
+  @media screen and (max-width: 1000px) {
+	/* .contents-section {
+	  flex-wrap: wrap;
+	} */
+	.viewer {
+	  width: 100% !important;
+	}
+	/* .list-content {
+	  width: 100% !important;
+	} */
+	/* .sideBar {
+	  display:none;
+	} */
+  }

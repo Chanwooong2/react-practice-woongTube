@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from './components/navBar';
 import './app.css';
-import VideoList from './components/videoList';
-import DetailVideo from './components/detailVideo';
+import VideoList from './components/videoList/videoList';
+import DetailVideo from './components/detailVideo/detailVideo';
 import SideBar from './components/sideBar';
 
 class App extends Component {
@@ -27,7 +27,7 @@ class App extends Component {
     };
     
     fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=24&q="+ keword +"&key=AIzaSyAGspOfM9ON-bAaxl_wztnGF_CmLkMcllI", requestOptions)
-      .then(response => response.text())
+      .then(response => response.json())
       .then(result =>  this.setData(result))
       .catch(error => console.log('error', error));
   }
@@ -39,18 +39,18 @@ class App extends Component {
     };
     
     fetch("https://youtube.googleapis.com/youtube/v3/videos/?part=snippet&chart=mostPopular&maxResults=24&regionCode=kr&key=AIzaSyAGspOfM9ON-bAaxl_wztnGF_CmLkMcllI", requestOptions)
-      .then(response => response.text())
+      .then(response => response.json())
       .then(result => this.setData(result))
       .catch(error => console.log('error', error));
 
   }
 
   setData = (result) => {
-    const obj = JSON.parse(result);
+    // const obj = JSON.parse(result);
     this.setState({
-      videoList: obj.items, 
-      nextPageToken : obj.nextPageToken, 
-      etag : obj.etag,
+      videoList: result.items, 
+      nextPageToken : result.nextPageToken, 
+      etag : result.etag,
       detailViewOnOff : false,
     });
     document.documentElement.scrollTop = 0;

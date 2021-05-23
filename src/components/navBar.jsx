@@ -9,6 +9,7 @@ class NavBar extends PureComponent {
     }
 
     render() {
+        console.log(`render navBar~!`);
         return (
             <nav className="navBar">
                 <span className="navBar-logo">
