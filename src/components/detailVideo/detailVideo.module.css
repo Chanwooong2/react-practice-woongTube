@@ -45,34 +45,8 @@
 } */
 
 
-
-@media screen and (max-width: 676px) {
-	/* .video {
-	  width:100%;
-	  height:auto;
-	} */
-	/* .video-detail {
-	  width:100%;
-	  height:100%;
-	}
-	.video-img {
-	  width:100%;
-	}
-	.sideBar {
-	  display:none;
-	} */
-  }
   @media screen and (max-width: 1000px) {
-	/* .contents-section {
-	  flex-wrap: wrap;
-	} */
 	.viewer {
 	  width: 100% !important;
 	}
-	/* .list-content {
-	  width: 100% !important;
-	} */
-	/* .sideBar {
-	  display:none;
-	} */
   }

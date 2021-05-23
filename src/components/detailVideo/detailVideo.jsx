@@ -17,13 +17,19 @@ class DetailVideo extends Component {
 			}else{
 				videoId = video.id.videoId;
 			}
-			let videoSrc = "https://www.youtube.com/embed/" + videoId + "?enablejsapi=1"
+			let videoSrc = `https://www.youtube.com/embed/${videoId}?enablejsapi=1`;
 
 			return (
 				<div className={styles.viewer}>
 					<div className={styles.view}>
-						<iframe id={styles.player} type="text/html" width="960" height="540"
-							src={videoSrc} frameBorder="0" title="woongTubePlayer"></iframe>
+						<iframe id={styles.player} 
+						type="text/html" 
+						width="960" 
+						height="540"
+						src={videoSrc} 
+						frameBorder="0" 
+						title="woongTubePlayer"
+						allowFullScreen></iframe>
 					</div>
 					<div className={styles.description}>
 						<div className={styles.tag}>{tags}</div>
