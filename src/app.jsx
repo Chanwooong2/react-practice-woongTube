@@ -13,40 +13,25 @@ class App extends Component {
     detailViewOnOff : false,  //  false -> off
     selectedVideoId : "",
   }
-
+  
   componentDidMount = () =>{
     this.getInitData();
   }
 
   searchVideo = (keword) =>{
     console.log(`in the search func! : ${keword}`);
-
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
-    
-    fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=24&q="+ keword +"&key=AIzaSyAGspOfM9ON-bAaxl_wztnGF_CmLkMcllI", requestOptions)
-      .then(response => response.json())
-      .then(result =>  this.setData(result))
-      .catch(error => console.log('error', error));
+    this.props.youtubeAPI
+      .searchList(keword)
+      .then(this.setData);
   }
 
   getInitData = () =>{
-    const requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
-    
-    fetch("https://youtube.googleapis.com/youtube/v3/videos/?part=snippet&chart=mostPopular&maxResults=24&regionCode=kr&key=AIzaSyAGspOfM9ON-bAaxl_wztnGF_CmLkMcllI", requestOptions)
-      .then(response => response.json())
-      .then(result => this.setData(result))
-      .catch(error => console.log('error', error));
-
+    this.props.youtubeAPI
+      .mostPopularList()
+      .then(this.setData);
   }
 
   setData = (result) => {
-    // const obj = JSON.parse(result);
     this.setState({
       videoList: result.items, 
       nextPageToken : result.nextPageToken, 
